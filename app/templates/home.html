@@ -1,0 +1,10 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Welcome to Our Service!</h1>
+  <p>Please choose your registration type:</p>
+  <div>
+    <a href="{% url 'customer_registration' %}" class="btn btn-primary">Register as a Customer</a>
+    <a href="{% url 'executor_registration' %}" class="btn btn-secondary">Register as an Executor</a>
+  </div>
+{% endblock %}
